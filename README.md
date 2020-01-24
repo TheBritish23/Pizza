@@ -1,6 +1,6 @@
 # _Pizza_
 
-#### _{Brief description of application}, 1/21/2020_
+#### _Make a Pizza and calculate price, 1/21/2020_
 
 #### By _**Soroush Azizi**_
 
@@ -28,6 +28,9 @@ _email.com_
 
 _{Tell me about the languages and tools you used to create this app. Assume that I know you probably used HTML and CSS. If you did something really cool using only HTML, point that out.}_
 
+## Specs
+_
+
 ### License
 
 MIT License
@@ -51,4 +54,4 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-Copyright (c) 2020 **_{Epicodus_**
+Copyright (c) 2020 **_Epicodus_**
