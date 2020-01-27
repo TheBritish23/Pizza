@@ -5,8 +5,12 @@ function Menu() {
 }
 
 // Business logic for Menu
-function Item(pizzaType, toppingT, crustType) {
+function Pizza(pizzaType, toppingT, crustType) {
   this.pizzaType = pizzaType
   this.toppingT = toppingT
   this.crustType = crustType
+}
+
+Pizza.prototype.fullCourse = function() {
+  return this.pizzaType + " " + this.crustType;
 }

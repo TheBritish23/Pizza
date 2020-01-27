@@ -29,7 +29,10 @@ _email.com_
 _{Tell me about the languages and tools you used to create this app. Assume that I know you probably used HTML and CSS. If you did something really cool using only HTML, point that out.}_
 
 ## Specs
-_
+_1. Input is displayed_
+  _Example: "Pizza" Pizza_
+_2. Prices are shown and summed up_
+  _Example: Pizza = $5, Toppings = $1.50, Crust = $0.25; $7.80_
 
 ### License
 
