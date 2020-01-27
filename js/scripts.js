@@ -6,5 +6,7 @@ function Menu() {
 
 // Business logic for Menu
 function Item(pizzaType, toppingT, crustType) {
-  
+  this.pizzaType = pizzaType
+  this.toppingT = toppingT
+  this.crustType = crustType
 }
