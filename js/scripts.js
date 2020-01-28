@@ -17,6 +17,7 @@ Pizza.prototype.fullCourse = function() {
 
 // User Interface Logic
 $(document).ready(function(){
-  $("form#cheese").click(function(){
-    $("#current-box").append(" ");
+ attachContactListeners();
+  $("form#cheese").submit(function(event) {
+    event.preventDefault()
   });
