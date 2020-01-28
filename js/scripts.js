@@ -14,3 +14,9 @@ function Pizza(pizzaType, toppingT, crustType) {
 Pizza.prototype.fullCourse = function() {
   return this.pizzaType + " " + this.crustType;
 }
+
+// User Interface Logic
+$(document).ready(function(){
+  $("form#cheese").click(function(){
+    $("#current-box").append(" ");
+  });
