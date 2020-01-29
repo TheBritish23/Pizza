@@ -20,4 +20,5 @@ $(document).ready(function(){
   var myPizza = new Pizza();
   $("form#cheese").submit(function(event) {
     event.preventDefault();
+    myPizza.listAll();
   });
