@@ -24,6 +24,18 @@ $(document).ready(function(){
 
     $("#btn-sizeChoice").click(function(event){
       event.preventDefault();
-      player.tops();
-    }
-  });
+      player.choice();
+      $("#pizza").text(player.pizza);
+    });
+
+    $("#btn-topChoice").click(function(event){
+      event.preventDefault();
+      player.top();
+      $("#tops").text(player.tops);
+    });
+
+    $("#btn-crustChoice").click(function(event){
+      event.preventDefault();
+      player.dough();
+      $("#crust").text(player.crust);
+    });
