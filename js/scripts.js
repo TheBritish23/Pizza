@@ -21,4 +21,9 @@ $(document).ready(function(){
   $("form#cheese").submit(function(event) {
     event.preventDefault();
     myPizza.listAll();
+
+    $("#btn-sizeChoice").click(function(event){
+      event.preventDefault();
+      player.tops();
+    }
   });
