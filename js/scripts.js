@@ -20,7 +20,6 @@ $(document).ready(function(){
   var myPizza = new Pizza();
   $("form#cheese").submit(function(event) {
     event.preventDefault();
-    myPizza.listAll();
 
     $("#btn-sizeChoice").click(function(event){
       event.preventDefault();
@@ -40,6 +39,6 @@ $(document).ready(function(){
       $("#crust").text(player.crust);
     });
 
-      $("#output").text(result);
+      $("#output").text(output);
     });
   });
