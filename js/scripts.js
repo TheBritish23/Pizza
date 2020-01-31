@@ -39,3 +39,7 @@ $(document).ready(function(){
       player.dough();
       $("#crust").text(player.crust);
     });
+
+      $("#output").text(result);
+    });
+  });
