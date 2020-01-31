@@ -33,6 +33,8 @@ _1. Input is displayed_
   _Example: "Pizza" Pizza_
 _2. Prices are shown and summed up_
   _Example: Pizza = $5, Toppings = $1.50, Crust = $0.25; $7.80_
+_3. Output is displayed_
+  _Example: Output "Output"_
 
 ### License
 
