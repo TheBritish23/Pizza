@@ -1,7 +1,7 @@
 // Business logic for Customer
 function Menu() {
   this.food = []
-  this.currentId = 0;
+  this.choice = []
 }
 
 // Business logic for Menu
@@ -23,19 +23,20 @@ $(document).ready(function(){
 
     $("#btn-sizeChoice").click(function(event){
       event.preventDefault();
-      player.choice();
+      myPizza.choice();
       $("#pizza").text(player.pizza);
+      var myPizza = document.getElementById("choice").value;
     });
 
     $("#btn-topChoice").click(function(event){
       event.preventDefault();
-      player.top();
+      myPizza.top();
       $("#tops").text(player.tops);
     });
 
     $("#btn-crustChoice").click(function(event){
       event.preventDefault();
-      player.dough();
+      myPizza.dough();
       $("#crust").text(player.crust);
     });
 
