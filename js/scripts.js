@@ -25,7 +25,6 @@ $(document).ready(function(){
       event.preventDefault();
       myPizza.choice();
       $("#pizza").text(player.pizza);
-      var myPizza = document.getElementById("choice").value;
     });
 
     $("#btn-topChoice").click(function(event){
@@ -41,5 +40,6 @@ $(document).ready(function(){
     });
 
       $("#output").text(output);
+      var myPizza = document.getElementById("Pizza").value;
     });
   });
