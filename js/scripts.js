@@ -25,21 +25,23 @@ $(document).ready(function(){
       event.preventDefault();
       myPizza.choice();
       $("#pizza").text(player.pizza);
+      var myPizza = document.getElementById("choice").value;
     });
 
     $("#btn-topChoice").click(function(event){
       event.preventDefault();
       myPizza.top();
       $("#tops").text(player.tops);
+      var myPizza = document.getElementById("top").value;
     });
 
     $("#btn-crustChoice").click(function(event){
       event.preventDefault();
       myPizza.dough();
       $("#crust").text(player.crust);
+      var myPizza = document.getElementById("crust").value;
     });
 
       $("#output").text(output);
-      var myPizza = document.getElementById("Pizza").value;
     });
   });
