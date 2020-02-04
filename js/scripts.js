@@ -21,7 +21,7 @@ $(document).ready(function(){
   $("form#cheese").submit(function(event) {
     event.preventDefault();
 
-    $("#btn-sizeChoice").click(function(event){
+    $("#sizeChoice").click(function(event){
       event.preventDefault();
       myPizza.choice();
       $("#pizza").text(player.pizza);
@@ -29,14 +29,14 @@ $(document).ready(function(){
       console.log(myPizza)
     });
 
-    $("#btn-topChoice").click(function(event){
+    $("#topChoice").click(function(event){
       event.preventDefault();
       myPizza.top();
       $("#tops").text(player.tops);
       var myPizza = document.getElementById("topping").value();
     });
 
-    $("#btn-crustChoice").click(function(event){
+    $("#crustChoice").click(function(event){
       event.preventDefault();
       myPizza.dough();
       $("#crust").text(player.crust);
