@@ -5,8 +5,8 @@ function Menu() {
 }
 
 // Business logic for Menu
-function Pizza(pizzaType, toppingT, crustType) {
-  this.pizzaType = pizzaType
+function Pizza(pizzaSize, toppingT, crustType) {
+  this.pizzaSize = pizzaSize
   this.toppingT = toppingT
   this.crustType = crustType
 }
@@ -18,31 +18,33 @@ Pizza.prototype.fullCourse = function() {
 // User Interface Logic
 $(document).ready(function(){
   var myPizza = new Pizza();
-  $("form#cheese").submit(function(event) {
-    event.preventDefault();
+  // $("form#cheese").submit(function(event) {
+  //   event.preventDefault();
 
-    $("#sizeChoice").click(function(event){
-      event.preventDefault();
-      myPizza.choice();
-      $("#pizza").text(player.pizza);
-      var myPizza = document.getElementById("size").value();
-      console.log(myPizza)
+    $("button.size").click(function() {
+      // myPizza.choice();
+      // $("#pizza").text(player.pizza);
+      var small = $("button#s").val();
+      // myPizza.pizzaSize = document.getElementByClassName("size").value;
+      console.log(myPizza(small))
     });
 
     $("#topChoice").click(function(event){
       event.preventDefault();
       myPizza.top();
       $("#tops").text(player.tops);
-      var myPizza = document.getElementById("topping").value();
+      myPizza.toppingT = document.getElementByClass("topping").value;
+      console.log(myPizza.toppingT)
     });
 
     $("#crustChoice").click(function(event){
       event.preventDefault();
       myPizza.dough();
       $("#crust").text(player.crust);
-      var myPizza = document.getElementById("crusty").value();
+      myPizza.crustType = document.getElementById("crusty").value;
+      console.log(myPizza.crustType)
     });
 
-      $("#output").text(output);
+      // $("#output").text(output);
     });
-  });
+  // });
