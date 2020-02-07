@@ -22,14 +22,14 @@ $(document).ready(function(){
   //   event.preventDefault();
 
     $("button.size").click(function() {
-      // myPizza.choice();
+      myPizza.choice();
       // $("#pizza").text(player.pizza);
       var small = $("button#s").val();
       var medium = $("button#m").val();
       var large = $("button#l").val();
       var xlarge = $("button#xl").val();
       // myPizza.pizzaSize = document.getElementByClassName("size").value;
-      console.log(myPizza(small))
+      console.log(myPizza())
     });
 
     $("#topChoice").click(function(){
