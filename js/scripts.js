@@ -25,20 +25,21 @@ $(document).ready(function(){
       // myPizza.choice();
       // $("#pizza").text(player.pizza);
       var small = $("button#s").val();
+      var medium = $("button#m").val();
+      var large = $("button#l").val();
+      var xlarge = $("button#xl").val();
       // myPizza.pizzaSize = document.getElementByClassName("size").value;
       console.log(myPizza(small))
     });
 
-    $("#topChoice").click(function(event){
-      event.preventDefault();
-      myPizza.top();
-      $("#tops").text(player.tops);
+    $("#topChoice").click(function(){
+      // myPizza.top();
+      // $("#tops").text(player.tops);
       myPizza.toppingT = document.getElementByClass("topping").value;
       console.log(myPizza.toppingT)
     });
 
-    $("#crustChoice").click(function(event){
-      event.preventDefault();
+    $("#crustChoice").click(function(){
       myPizza.dough();
       $("#crust").text(player.crust);
       myPizza.crustType = document.getElementById("crusty").value;
