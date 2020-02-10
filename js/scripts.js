@@ -29,7 +29,6 @@ $(document).ready(function(){
       var large = $("button#l").val();
       var xlarge = $("button#xl").val();
       // myPizza.pizzaSize = document.getElementByClassName("size").value;
-      console.log(myPizza())
     });
 
     $("#topChoice").click(function(){
