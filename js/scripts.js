@@ -12,7 +12,7 @@ function Pizza(pizzaSize, toppingT, crustType) {
 }
 
 Pizza.prototype.fullCourse = function() {
-  return this.pizzaType + " " + this.crustType;
+  return this.pizzaSize + " " + this.crustType;
 }
 
 // User Interface Logic
@@ -22,13 +22,14 @@ $(document).ready(function(){
   //   event.preventDefault();
 
     $("button.size").click(function() {
-      myPizza.choice();
+      var size = $("button.size").val();
       // $("#pizza").text(player.pizza);
-      var small = $("button#s").val();
-      var medium = $("button#m").val();
-      var large = $("button#l").val();
-      var xlarge = $("button#xl").val();
+      // var small = $("button#s").val();
+      // var medium = $("button#m").val();
+      // var large = $("button#l").val();
+      // var xlarge = $("button#xl").val();
       // myPizza.pizzaSize = document.getElementByClassName("size").value;
+      console.log(size);
     });
 
     $("#topChoice").click(function(){
