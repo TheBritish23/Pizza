@@ -21,15 +21,17 @@ $(document).ready(function(){
   // $("form#cheese").submit(function(event) {
   //   event.preventDefault();
 
-    $("button.size").click(function() {
-      var size = $("button.size").val("small");
+    $("button.size").click(function(event) {
+      event.preventDefault();
+      // var size = $("button.size").val("small");
+      var size1 = $(event.target).attr("value");
       // $("#pizza").text(player.pizza);
       // var small = $("button#s").val();
       // var medium = $("button#m").val();
       // var large = $("button#l").val();
       // var xlarge = $("button#xl").val();
       // myPizza.pizzaSize = document.getElementByClassName("size").value;
-      console.log(size);
+      console.log(size1);
     });
 
     $("button.topping").click(function(){
