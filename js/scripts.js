@@ -35,16 +35,20 @@ $(document).ready(function(){
     });
 
     $("button.topping").click(function(){
+      event.preventDefault();
+      var topping = $(event.target).attr("value");
       // myPizza.top();
       // $("#tops").text(player.tops);
-      myPizza.toppingT = document.getElementByClass("topping").value;
+      // myPizza.toppingT = document.getElementByClass("topping").value;
       console.log(topping);
     });
 
     $("button.crust").click(function(){
-      myPizza.dough();
-      $("#crust").text(player.crust);
-      myPizza.crustType = document.getElementById("crusty").value;
+      event.preventDefault();
+      var crust = $(event.target).attr("value");
+      // myPizza.dough();
+      // $("#crust").text(player.crust);
+      // myPizza.crustType = document.getElementById("crusty").value;
       console.log(crust);
     });
 
