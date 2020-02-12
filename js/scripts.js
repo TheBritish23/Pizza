@@ -16,47 +16,38 @@ Pizza.prototype.fullCourse = function() {
 }
 
 Pizza.prototype.fullCourse = function() {
-  console.log(this.food);
-  return parseInt(this.food) * 13.35;
+  console.log(this.customer);
+  return parseInt(this.customer) * 13.35;
 }
 
 // User Interface Logic
 $(document).ready(function(){
-  var myPizza = new Pizza();
   // $("form#cheese").submit(function(event) {
   //   event.preventDefault();
 
     $("button.size").click(function(event) {
       event.preventDefault();
-      // var size = $("button.size").val("small");
       var size1 = $(event.target).attr("value");
-      // $("#pizza").text(player.pizza);
-      // var small = $("button#s").val();
-      // var medium = $("button#m").val();
-      // var large = $("button#l").val();
-      // var xlarge = $("button#xl").val();
-      // myPizza.pizzaSize = document.getElementByClassName("size").value;
       console.log(size1);
     });
 
-    $("button.topping").click(function(){
+    $("button.topping").click(function(event){
       event.preventDefault();
       var topping = $(event.target).attr("value");
-      // myPizza.top();
-      // $("#tops").text(player.tops);
-      // myPizza.toppingT = document.getElementByClass("topping").value;
       console.log(topping);
     });
 
-    $("button.crust").click(function(){
+    $("button.crust").click(function(event){
       event.preventDefault();
-      var crust = $(event.target).attr("value");
-      // myPizza.dough();
-      // $("#crust").text(player.crust);
-      // myPizza.crustType = document.getElementById("crusty").value;
+      var crust = $(event.target).attr("value")
       console.log(crust);
     });
 
-      // $("#output").text(output);
+    var myPizza = new Pizza();
+    $("button#pay").click(function(event){
+    event.preventDefault();
+    console.log(crust);
+  });
+     $("#output").text("trump sucks balls!!!");
     });
   // });
