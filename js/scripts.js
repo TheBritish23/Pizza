@@ -44,8 +44,8 @@ $(document).ready(function(){
       console.log(crust);
     });
 
-    var myPizza = new Pizza(size1, topping, crust);
     $("button#pay").click(function(event){
+    var myPizza = new Pizza(size1, topping, crust);
     event.preventDefault();
     console.log(myPizza);
   });
