@@ -25,21 +25,24 @@ $(document).ready(function(){
   // $("form#cheese").submit(function(event) {
   //   event.preventDefault();
 
+    var size1 = "";
     $("button.size").click(function(event) {
       event.preventDefault();
-      var size1 = $(event.target).attr("value");
+      size1 = $(event.target).attr("value");
       console.log(size1);
     });
 
+    var topping = "";
     $("button.topping").click(function(event){
       event.preventDefault();
-      var topping = $(event.target).attr("value");
+      topping = $(event.target).attr("value");
       console.log(topping);
     });
 
+    var crust = "";
     $("button.crust").click(function(event){
       event.preventDefault();
-      var crust = $(event.target).attr("value")
+      crust = $(event.target).attr("value")
       console.log(crust);
     });
 
