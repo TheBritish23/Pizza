@@ -21,35 +21,33 @@ Pizza.prototype.fullCourse = function() {
 }
 
 // User Interface Logic
+var size1 = "";
+var topping = "";
+var crust = "";
 $(document).ready(function(){
-  // $("form#cheese").submit(function(event) {
-  //   event.preventDefault();
 
-    var size1 = "";
     $("button.size").click(function(event) {
       event.preventDefault();
       size1 = $(event.target).attr("value");
       console.log(size1);
     });
 
-    var topping = "";
     $("button.topping").click(function(event){
       event.preventDefault();
       topping = $(event.target).attr("value");
       console.log(topping);
     });
 
-    var crust = "";
     $("button.crust").click(function(event){
       event.preventDefault();
       crust = $(event.target).attr("value")
       console.log(crust);
     });
 
-    var myPizza = new Pizza();
+    var myPizza = new Pizza(size1, topping, crust);
     $("button#pay").click(function(event){
     event.preventDefault();
-    console.log(crust);
+    console.log(myPizza);
   });
      $("#output").text("trump sucks balls!!!");
     });
