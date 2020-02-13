@@ -45,10 +45,10 @@ $(document).ready(function(){
     });
 
     $("button#pay").click(function(event){
+      event.preventDefault();
     var myPizza = new Pizza(size1, topping, crust);
-    event.preventDefault();
+    $("#output").append(size1 + " " + topping + " " + crust);
     console.log(myPizza);
   });
-     $("#output").append("output");
     });
   // });
