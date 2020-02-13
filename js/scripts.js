@@ -49,6 +49,6 @@ $(document).ready(function(){
     event.preventDefault();
     console.log(myPizza);
   });
-     $("#output").text("trump sucks balls!!!");
+     $("#output").append("output");
     });
   // });
