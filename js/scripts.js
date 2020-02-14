@@ -48,7 +48,39 @@ $(document).ready(function(){
       event.preventDefault();
     var myPizza = new Pizza(size1, topping, crust);
     $("#output").append(size1 + " " + topping + " " + crust);
-    $
+    var price = 0;
+    if (myPizza.size1=="small") {
+      price += 6.99;
+    }
+    else if (myPizza.size1=="medium") {
+      price += 10.99;
+    }
+    else if (myPizza.size1=="large") {
+      price += 17.35;
+    }
+    else if (myPizza.size1=="xlarge") {
+      price += 21.45
+    }
+
+    if (myPizza.topping=="cheese") {
+      price += 2.15;
+    }
+    else if (myPizza.topping=="pepperoni") {
+      price += 2.15;
+    }
+    else if (myPizza.topping=="anchovies") {
+      price += 2.15;
+    }
+    else if (myPizza.topping=="veggies") {
+      price += 2.15;
+    }
+
+    if (myPizza.crust=="thin crust") {
+      price += 3.15;
+    }
+    else if (true) {
+
+    }
 
     console.log(myPizza);
   });
