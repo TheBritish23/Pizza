@@ -78,6 +78,13 @@ $(document).ready(function(){
     if (myPizza.crust=="thin crust") {
       price += 3.15;
     }
+    else if (myPizza.crust=="thick crust") {
+      price += 3.15;
+    }
+
+    if (myPizza.crust=="thin crust") {
+      price += 3.15;
+    }
     else if (true) {
 
     }
