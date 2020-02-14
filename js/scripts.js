@@ -16,8 +16,8 @@ Pizza.prototype.fullCourse = function() {
 }
 
 Pizza.prototype.fullCourse = function() {
-  console.log(this.customer);
-  return parseInt(this.customer) * 13.35;
+  console.log(this.food);
+  return parseInt(this.food) * 13.35;
 }
 
 // User Interface Logic
@@ -48,6 +48,8 @@ $(document).ready(function(){
       event.preventDefault();
     var myPizza = new Pizza(size1, topping, crust);
     $("#output").append(size1 + " " + topping + " " + crust);
+    $
+
     console.log(myPizza);
   });
     });
