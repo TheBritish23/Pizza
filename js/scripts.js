@@ -82,7 +82,7 @@ $(document).ready(function(){
       price += 3.15;
     }
     console.log(price);
-
+    $("#output").append(price);
     console.log(myPizza);
   });
     });
