@@ -18,7 +18,7 @@ _Amalgamation of Object-Oriented Javascript: Using Prototypes and Constructors t
 
 ## Known Bugs
 
-_{Are there issues that have not yet been resolved that you want to let users know you know?  Outline any issues that would impact use of your application.  Share any workarounds that are in place. }_
+_Text is a litle hard to see_
 
 ## Support and contact details
 
@@ -35,7 +35,8 @@ _2. Prices are shown and summed up_
   _Example: Pizza = $5, Toppings = $1.50, Crust = $0.25; $7.80_
 _3. Output is displayed_
   _Example: Output "Output"_
-
+_4. Each value has a set price_
+  _Example: "Thin Crust" $1.88_
 ### License
 
 MIT License
