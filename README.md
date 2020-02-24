@@ -10,11 +10,11 @@ _Amalgamation of Object-Oriented Javascript: Using Prototypes and Constructors t
 
 ## Setup/Installation Requirements
 
-* _Git_
-* _Atom_
-* _CSS_
-* _Javascript_
-* _Github_
+* _1. Create local Git Repository_
+* _2. Create Remote Git Repository_
+* _3. Create Atom file_
+* _4. Download Bootstrap and Javascript (There are sites where you can download for free, do NOT buy)_
+* _5. Make supporting HTML, JS, and CSS files_
 
 ## Known Bugs
 

@@ -11,15 +11,6 @@ function Pizza(pizzaSize, toppingT, crustType) {
   this.crustType = crustType
 }
 
-Pizza.prototype.fullCourse = function() {
-  return this.pizzaSize + " " + this.crustType;
-}
-
-Pizza.prototype.fullCourse = function() {
-  console.log(this.food);
-  return parseInt(this.food) * 13.35;
-}
-
 // User Interface Logic
 $(document).ready(function(){
   var price = 0;
@@ -81,4 +72,4 @@ $(document).ready(function(){
     $("#output").append(size1 + " " + topping + " " + crust + " = $" + price.toFixed(2));
     console.log(myPizza);
   });
-    });
+ });
