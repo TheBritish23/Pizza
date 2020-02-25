@@ -26,7 +26,7 @@ _email.com_
 
 ## Technologies Used
 
-_Using Prototypes and Constructors to formulate the calculation of prices then using "if" statements to match the values._
+_HTML5, Javascript, CSS, Atom_
 
 ## Specs
 _1. Input is displayed_
