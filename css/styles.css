@@ -7,6 +7,15 @@ h1 {
   color: red;
 }
 
+h2 {
+  font-family: 'Londrina Outline', cursive;
+  font-style: italic;
+  font-weight: bold;
+  text-align: left;
+  text-shadow: 2px 2px #e1ff00;
+  color: red;
+}
+
 button {
   background-color: red;
   border: none;
