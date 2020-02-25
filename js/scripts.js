@@ -64,7 +64,7 @@ $(document).ready(function(){
     $("button#pay").click(function(event){
       event.preventDefault();
     var myPizza = new Pizza(size1, topping, crust);
-    $("#output").append(size1 + " " + topping + " " + crust + " = $" + price.toFixed(2));
+    $("#output").empty().append(size1 + " " + topping + " " + crust + " = $" + price.toFixed(2));
     console.log(myPizza);
   });
  });
