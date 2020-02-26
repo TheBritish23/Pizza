@@ -18,7 +18,7 @@ _Amalgamation of Object-Oriented Javascript: Using Prototypes and Constructors t
 
 ## Known Bugs
 
-_Text is a litle hard to see_
+_no known bugs at this time_
 
 ## Support and contact details
 
