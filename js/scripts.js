@@ -1,10 +1,15 @@
 
 // Business logic for Menu
-function Pizza(pizzaSize, toppingT, crustType) {
-  this.pizzaSize = pizzaSize
-  this.toppingT = toppingT
-  this.crustType = crustType
+function Pizza(pizzaSize, toppingT, crustType, pricePrice) {
+  this.pizzaSize = pizzaSize;
+  this.toppingT = toppingT;
+  this.crustType = crustType;
+  this.pricePrice = pricePrice;
 }
+
+Pizza.prototype.price = function() {
+  return this.pizzaSize + " " + this.toppingT + " " + this.crustType + " " + this.pricePrice;
+};
 
 // User Interface Logic
 $(document).ready(function(){
@@ -63,8 +68,7 @@ $(document).ready(function(){
 
     $("button#pay").click(function(event){
       event.preventDefault();
-    var myPizza = new Pizza(size1, topping, crust);
     $("#output").empty().append(size1 + " " + topping + " " + crust + " = $" + price.toFixed(2));
-    console.log(myPizza);
+    console.log(Pizza);
   });
  });
