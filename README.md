@@ -29,6 +29,7 @@ _email.com_
 _HTML5, Javascript, CSS, Atom_
 
 ## Specs
+
 _1. Input is displayed_
   _Example: "Pizza" Pizza_
 _2. Prices are shown and summed up_
@@ -37,6 +38,7 @@ _3. Output is displayed_
   _Example: Output "Output"_
 _4. Each value has a set price_
   _Example: "Thin Crust" $1.88_
+
 ### License
 
 MIT License
