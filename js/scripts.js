@@ -8,8 +8,20 @@ function Pizza(pizzaSize, toppingT, crustType, pricePrice) {
 }
 
 Pizza.prototype.price = function() {
-  return this.pizzaSize + " " + this.toppingT + " " + this.crustType + " " + this.pricePrice;
+  return this.pricePrice;
 };
+
+Pizza.prototype.size1 = function() {
+  return this.pizzaSize;
+}
+
+Pizza.prototype.topping = function() {
+  return this.toppingT;
+}
+
+Pizza.prototype.crust = function() {
+  return this.crustType;
+}
 
 // User Interface Logic
 $(document).ready(function(){
@@ -68,7 +80,8 @@ $(document).ready(function(){
 
     $("button#pay").click(function(event){
       event.preventDefault();
-    $("#output").empty().append(size1 + " " + topping + " " + crust + " = $" + price.toFixed(2));
+    //$("#output").empty().append(size1 + " " + topping + " " + crust + " = $" + price.toFixed(2));
+    $("#output").empty().append(size1 + " " + topping + " " + crust + " " + price.toFixed(2));
     console.log(Pizza);
   });
  });
