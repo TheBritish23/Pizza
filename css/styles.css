@@ -33,6 +33,26 @@ button {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
+ .size:hover {
+  background-color: yellow;
+  color: black;
+}
+
+.topping:hover {
+ background-color: yellow;
+ color: black;
+}
+
+.crust:hover {
+background-color: yellow;
+color: black;
+}
+
+.buttonbutton5:hover {
+background-color: yellow;
+color: black;
+}
+
 body, html {
   background-image: url("../img/NYPizza.jpg");
   background-repeat: no-repeat;
