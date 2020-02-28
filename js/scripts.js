@@ -81,7 +81,7 @@ $(document).ready(function(){
     $("button#pay").click(function(event){
       event.preventDefault();
     //$("#output").empty().append(size1 + " " + topping + " " + crust + " = $" + price.toFixed(2));
-    $("#output").empty().append(size1 + " " + topping + " " + crust + " " + price.toFixed(2));
-    console.log(Pizza);
+    $("#output").empty().append(size1 + " " + topping + " " + crust + " = $" + price.toFixed(2));
+    console.log(price);
   });
  });
