@@ -30,6 +30,7 @@ $(document).ready(function(){
   var topping = "";
   var crust = "";
     $("button.size").click(function(event) {
+       $(this).toggleClass("background-color-select");
         event.preventDefault();
       size1 = $(event.target).attr("value");
       if (size1=="small") {
@@ -49,6 +50,7 @@ $(document).ready(function(){
     });
 
     $("button.topping").click(function(event){
+       $(this).toggleClass("background-color-select");
         event.preventDefault();
       topping = $(event.target).attr("value");
       if (topping=="cheese") {
@@ -67,6 +69,7 @@ $(document).ready(function(){
     });
 
     $("button.crust").click(function(event){
+      $(this).toggleClass("background-color-select");
         event.preventDefault();
       crust = $(event.target).attr("value")
       if (crust=="thin crust") {

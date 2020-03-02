@@ -34,12 +34,17 @@ button {
 }
 
  .size:hover {
+   background-color: yellow;
+   color: black;
+}
+
+.background-color-select{
   background-color: yellow;
   color: black;
 }
 
-.size:focus {
-  background-color:yellow;
+ .size:target {
+  background-color: yellow;
 }
 
 .topping:hover {
@@ -47,8 +52,8 @@ button {
  color: black;
 }
 
-.topping:focus {
-  background-color:yellow;
+.topping:target {
+ background-color: yellow;
 }
 
 .crust:hover {
@@ -56,8 +61,8 @@ background-color: yellow;
 color: black;
 }
 
-.crust:focus {
-  background-color:yellow;
+.crust:target {
+ background-color: yellow;
 }
 
 .buttonbutton5:hover {
@@ -65,10 +70,9 @@ background-color: yellow;
 color: black;
 }
 
-.buttonbutton5:focus {
-  background-color:yellow;
+.buttonbutton5:target {
+ background-color: yellow;
 }
-
 
 body, html {
   background-image: url("../img/NYPizza.jpg");
