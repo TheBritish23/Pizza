@@ -30,8 +30,9 @@ $(document).ready(function(){
   var topping = "";
   var crust = "";
     $("button.size").click(function(event) {
+      event.preventDefault();
+      $("button.size").removeClass("background-color-select");
        $(this).toggleClass("background-color-select");
-        event.preventDefault();
       size1 = $(event.target).attr("value");
       if (size1=="small") {
         price += 6.99;
@@ -50,8 +51,8 @@ $(document).ready(function(){
     });
 
     $("button.topping").click(function(event){
-       $(this).toggleClass("background-color-select");
-        event.preventDefault();
+       event.preventDefault();
+         $(this).toggleClass("background-color-select");
       topping = $(event.target).attr("value");
       if (topping=="cheese") {
         price += 2.15;
@@ -69,8 +70,8 @@ $(document).ready(function(){
     });
 
     $("button.crust").click(function(event){
-      $(this).toggleClass("background-color-select");
-        event.preventDefault();
+      event.preventDefault();
+        $(this).toggleClass("background-color-select");
       crust = $(event.target).attr("value")
       if (crust=="thin crust") {
         price += 3.15;
