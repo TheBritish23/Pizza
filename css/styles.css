@@ -38,9 +38,17 @@ button {
   color: black;
 }
 
+.size:focus {
+  background-color:yellow;
+}
+
 .topping:hover {
  background-color: yellow;
  color: black;
+}
+
+.topping:focus {
+  background-color:yellow;
 }
 
 .crust:hover {
@@ -48,10 +56,19 @@ background-color: yellow;
 color: black;
 }
 
+.crust:focus {
+  background-color:yellow;
+}
+
 .buttonbutton5:hover {
 background-color: yellow;
 color: black;
 }
+
+.buttonbutton5:focus {
+  background-color:yellow;
+}
+
 
 body, html {
   background-image: url("../img/NYPizza.jpg");
