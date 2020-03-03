@@ -99,9 +99,13 @@ $(document).ready(function(){
       if (crust=="thin crust") {
         price += 3.15;
       }
+      currentcrustPrice = 0;
+
       else if (crust=="thick crust") {
         price += 3.25;
       }
+      currentcrustPrice = 0;
+      
       console.log(crust);
     });
 
