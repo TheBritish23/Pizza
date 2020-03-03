@@ -5,6 +5,9 @@ function Pizza(pizzaSize, toppingT, crustType, pricePrice) {
   this.toppingT = toppingT;
   this.crustType = crustType;
   this.pricePrice = pricePrice;
+  this.sizePrice = 0;
+  this.toppingPrice = 0;
+  this.crustPrice = 0;
 }
 
 Pizza.prototype.price = function() {
@@ -33,6 +36,7 @@ $(document).ready(function(){
       event.preventDefault();
       $("button.size").removeClass("background-color-select");
        $(this).toggleClass("background-color-select");
+
       size1 = $(event.target).attr("value");
       if (size1=="small") {
         price += 6.99;
@@ -46,7 +50,7 @@ $(document).ready(function(){
       else if (size1=="xlarge") {
         price += 21.45
       }
-
+      
       console.log(size1);
     });
 
