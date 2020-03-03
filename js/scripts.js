@@ -11,6 +11,7 @@ function Pizza(pizzaSize, toppingT, crustType) {
 }
 
 Pizza.prototype.price = function() {
+  this.pricePrice = (this.sizePrice + this.toppingPrice + this.crustPrice);
   return this.pricePrice;
 };
 
@@ -112,7 +113,7 @@ $(document).ready(function(){
     $("button#pay").click(function(event){
       event.preventDefault();
     //$("#output").empty().append(size1 + " " + topping + " " + crust + " = $" + price.toFixed(2));
-    $("#output").empty().append(size1 + " " + topping + " " + crust + " = $" + price.toFixed(2));
+    $("#output").empty().append(myPizza.price().toFixed(2));
     console.log(price);
   });
  });
