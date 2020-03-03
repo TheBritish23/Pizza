@@ -1,10 +1,10 @@
 
 // Business logic for Menu
-function Pizza(pizzaSize, toppingT, crustType, pricePrice) {
+function Pizza(pizzaSize, toppingT, crustType) {
   this.pizzaSize = pizzaSize;
   this.toppingT = toppingT;
   this.crustType = crustType;
-  this.pricePrice = pricePrice;
+  this.pricePrice = 0;
   this.sizePrice = 0;
   this.toppingPrice = 0;
   this.crustPrice = 0;
@@ -36,21 +36,30 @@ $(document).ready(function(){
       event.preventDefault();
       $("button.size").removeClass("background-color-select");
        $(this).toggleClass("background-color-select");
+       myPizza = (null, null, null);
+       console.log(myPizza);
 
       size1 = $(event.target).attr("value");
       if (size1=="small") {
         price += 6.99;
       }
+      currentsizePrice = 0;
+
       else if (size1=="medium") {
         price += 10.99;
       }
+      currentsizePrice = 0;
+
       else if (size1=="large") {
         price += 17.35;
       }
+      currentsizePrice = 0;
+
       else if (size1=="xlarge") {
         price += 21.45
       }
-      
+      currentsizePrice = 0;
+
       console.log(size1);
     });
 
@@ -62,15 +71,23 @@ $(document).ready(function(){
       if (topping=="cheese") {
         price += 2.15;
       }
+      currenttoppingPrice = 0;
+
       else if (topping=="pepperoni") {
         price += 2.15;
       }
+      currenttoppingPrice = 0;
+
       else if (topping=="anchovies") {
         price += 2.15;
       }
+      currenttoppingPrice = 0;
+
       else if (topping=="veggies") {
         price += 2.15;
       }
+      currenttoppingPrice = 0;
+
       console.log(topping);
     });
 
