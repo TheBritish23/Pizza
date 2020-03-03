@@ -32,35 +32,33 @@ $(document).ready(function(){
   var size1 = "";
   var topping = "";
   var crust = "";
+  myPizza = new Pizza(null, null, null);
     $("button.size").click(function(event) {
       event.preventDefault();
       $("button.size").removeClass("background-color-select");
        $(this).toggleClass("background-color-select");
-       myPizza = (null, null, null);
        console.log(myPizza);
+       var currentSizePrice = 0;
 
       size1 = $(event.target).attr("value");
       if (size1=="small") {
-        price += 6.99;
+        currentSizePrice = 6.99;
       }
-      currentsizePrice = 0;
 
       else if (size1=="medium") {
-        price += 10.99;
+        currentSizePrice = 10.99;
       }
-      currentsizePrice = 0;
 
       else if (size1=="large") {
-        price += 17.35;
+        currentSizePrice = 17.35;
       }
-      currentsizePrice = 0;
 
       else if (size1=="xlarge") {
-        price += 21.45
+        currentSizePrice = 21.45
       }
-      currentsizePrice = 0;
 
-      console.log(size1);
+      myPizza.sizePrice = currentSizePrice;
+      console.log(myPizza.sizePrice);
     });
 
     $("button.topping").click(function(event){
@@ -68,27 +66,27 @@ $(document).ready(function(){
        $("button.topping").removeClass("background-color-select");
          $(this).toggleClass("background-color-select");
       topping = $(event.target).attr("value");
+      console.log(myPizza);
+      var currentToppingPrice = 0;
+
       if (topping=="cheese") {
-        price += 2.15;
+        currentToppingPrice = 2.15;
       }
-      currenttoppingPrice = 0;
 
       else if (topping=="pepperoni") {
-        price += 2.15;
+        currentToppingPrice = 2.15;
       }
-      currenttoppingPrice = 0;
 
       else if (topping=="anchovies") {
-        price += 2.15;
+        currentToppingPrice = 2.15;
       }
-      currenttoppingPrice = 0;
 
       else if (topping=="veggies") {
-        price += 2.15;
+        currentToppingPrice = 2.15;
       }
-      currenttoppingPrice = 0;
 
-      console.log(topping);
+      myPizza.toppingPrice = currentToppingPrice;
+      console.log(myPizza.toppingPrice);
     });
 
     $("button.crust").click(function(event){
@@ -96,17 +94,19 @@ $(document).ready(function(){
       $("button.crust").removeClass("background-color-select");
         $(this).toggleClass("background-color-select");
       crust = $(event.target).attr("value")
+      console.log(myPizza);
+      var currentCrustPrice = 0;
+
       if (crust=="thin crust") {
-        price += 3.15;
+        currentCrustPrice = 3.15;
       }
-      currentcrustPrice = 0;
 
       else if (crust=="thick crust") {
-        price += 3.25;
+        currentCrustPrice = 3.25;
       }
-      currentcrustPrice = 0;
-      
-      console.log(crust);
+
+      myPizza.crustPrice = currentCrustPrice;
+      console.log(myPizza.crustPrice);
     });
 
     $("button#pay").click(function(event){
