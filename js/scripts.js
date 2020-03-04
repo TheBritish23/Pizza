@@ -113,7 +113,7 @@ $(document).ready(function(){
     $("button#pay").click(function(event){
       event.preventDefault();
     //$("#output").empty().append(size1 + " " + topping + " " + crust + " = $" + price.toFixed(2));
-    $("#output").empty().append(myPizza.price().toFixed(2));
+    $("#output").empty().append("Your order is..." + "$" + myPizza.price().toFixed(2));
     console.log(price);
   });
  });
