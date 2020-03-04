@@ -38,7 +38,6 @@ $(document).ready(function(){
       event.preventDefault();
       $("button.size").removeClass("background-color-select");
        $(this).toggleClass("background-color-select");
-       console.log(myPizza);
        var currentSizePrice = 0;
 
       size1 = $(event.target).attr("value");
@@ -59,7 +58,6 @@ $(document).ready(function(){
       }
 
       myPizza.sizePrice = currentSizePrice;
-      console.log(myPizza.sizePrice);
     });
 
     $("button.topping").click(function(event){
@@ -67,7 +65,6 @@ $(document).ready(function(){
        $("button.topping").removeClass("background-color-select");
          $(this).toggleClass("background-color-select");
       topping = $(event.target).attr("value");
-      console.log(myPizza);
       var currentToppingPrice = 0;
 
       if (topping=="cheese") {
@@ -87,7 +84,6 @@ $(document).ready(function(){
       }
 
       myPizza.toppingPrice = currentToppingPrice;
-      console.log(myPizza.toppingPrice);
     });
 
     $("button.crust").click(function(event){
@@ -95,7 +91,6 @@ $(document).ready(function(){
       $("button.crust").removeClass("background-color-select");
         $(this).toggleClass("background-color-select");
       crust = $(event.target).attr("value")
-      console.log(myPizza);
       var currentCrustPrice = 0;
 
       if (crust=="thin crust") {
@@ -107,13 +102,11 @@ $(document).ready(function(){
       }
 
       myPizza.crustPrice = currentCrustPrice;
-      console.log(myPizza.crustPrice);
     });
 
     $("button#pay").click(function(event){
       event.preventDefault();
     //$("#output").empty().append(size1 + " " + topping + " " + crust + " = $" + price.toFixed(2));
     $("#output").empty().append("Your order is..." + "$" + myPizza.price().toFixed(2));
-    console.log(price);
   });
  });
