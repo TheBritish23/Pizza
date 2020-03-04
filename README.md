@@ -1,6 +1,6 @@
 # _Pizza_
 
-#### _Make a Pizza and calculate price, 1/21/2020_
+#### _Make a Pizza and calculate the price, 1/21/2020_
 
 #### By _**Soroush Azizi**_
 
@@ -10,11 +10,11 @@ _Amalgamation of Object-Oriented Javascript: Using Prototypes and Constructors t
 
 ## Setup/Installation Requirements
 
-* _1. Create local Git Repository_
-* _2. Create Remote Git Repository_
+* _1. Download Git Repository_
+* _2. Create local and Remote Repository_
 * _3. Create Atom file_
-* _4. Download Bootstrap and Javascript (There are sites where you can download for free, do NOT buy)_
-* _5. Make supporting HTML, JS, and CSS files_
+* _4. Make supporting HTML, JS, and CSS files_
+* _5. Download Git_
 
 ## Known Bugs
 
